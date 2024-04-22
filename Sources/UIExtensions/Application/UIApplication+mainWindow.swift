@@ -8,7 +8,7 @@
 #if os(iOS)
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     /// Returns the main UIWindow of the application, if available.
     ///
     /// This property searches for the main UIWindow among all connected UIWindowScenes.
