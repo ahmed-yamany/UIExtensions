@@ -5,9 +5,9 @@
 //  Created by Ahmed Yamany on 22/04/2024.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public extension UIViewController {
     /// Returns the topmost view controller in the view controller hierarchy.
     ///
