@@ -7,7 +7,8 @@
 
 #if os(iOS)
 import UIKit
-extension UIImage {
+
+public extension UIImage {
     /**
      Create an image of a solid color with the specified size.
      
@@ -25,7 +26,7 @@ extension UIImage {
      
      - Returns: An instance of `UIImage` filled with the specified color, or `nil` if the image creation fails.
      */
-    convenience public init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+    convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
         color.setFill()
