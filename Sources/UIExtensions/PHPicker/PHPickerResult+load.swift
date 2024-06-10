@@ -32,8 +32,9 @@ public extension PHPickerResult {
                     continuation.resume(throwing: error)
                 } else if let object = object as? T {
                     continuation.resume(returning: object)
+                } else {
+                    continuation.resume(returning: nil)
                 }
-                continuation.resume(returning: nil)
             }
         }
     }
